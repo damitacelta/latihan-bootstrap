@@ -1,0 +1,24 @@
+.main-navbar {
+      background-color: purple; 
+}
+
+.navbar-brand,
+.nav-link {
+  color: black ;
+}
+
+.banner {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("makanan.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+}
+
+.banner-content {
+  text-align: center;
+}
