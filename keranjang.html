@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cardea</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold">CARDEA</a>
+    <button class="navbar-toggler"
+    data-bs-toggle="collapse"
+    data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="nav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="koleksi.html">Koleksi</a></li>
+        <li class="nav-item"><a class="nav-link" href="promo.html">Promo</a></li>
+        <li class="nav-item"><a class="nav-link" href="keranjang.html">Keranjang</a></li>
+      </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <br>
+  <section class="container my-5">
+
+  <div class="cart-wrapper">
+
+    <h2 class="cart-title mb-4">Keranjang Belanja</h2>
+
+    <!-- HEADER -->
+    <div class="cart-header">
+
+      <div class="header-produk">
+        Produk
+      </div>
+
+      <div class="header-harga">
+        Harga
+      </div>
+
+      <div class="header-jumlah">
+        Jumlah
+      </div>
+
+      <div class="header-ukuran">
+        Ukuran
+      </div>
+
+    </div>
+
+    <!-- PRODUK 1 -->
+    <div class="cart-item">
+
+      <div class="cart-product">
+
+        <img src="cardigan cream pink.jpg" class="cart-img">
+
+        <div>
+          <h5>Couqete Creamy</h5>
+          <p class="text-muted">Cardigan soft premium</p>
+        </div>
+
+      </div>
+
+      <div class="cart-price">
+        Rp 178.000
+      </div>
+
+      <div class="cart-qty">
+        1
+      </div>
+
+      <div class="cart-size">
+        All Size
+      </div>
+
+    </div>
+
+    <!-- PRODUK 2 -->
+    <div class="cart-item">
+
+      <div class="cart-product">
+
+        <img src="bearcardi.jpg" class="cart-img">
+
+        <div>
+          <h5>Cardigan Bear</h5>
+          <p class="text-muted">Bear cardigan</p>
+        </div>
+
+      </div>
+
+      <div class="cart-price">
+        Rp 185.000
+      </div>
+
+      <div class="cart-qty">
+        1
+      </div>
+
+      <div class="cart-size">
+        All Size
+      </div>
+
+    </div>
+
+    <!-- PRODUK 3 -->
+    <div class="cart-item">
+
+      <div class="cart-product">
+
+        <img src="oversizecardi4.jpg" class="cart-img">
+
+        <div>
+          <h5>Over Flowers</h5>
+          <p class="text-muted">Simple korean style</p>
+        </div>
+
+      </div>
+
+      <div class="cart-price">
+        Rp 176.000
+      </div>
+
+      <div class="cart-qty">
+        1
+      </div>
+
+      <div class="cart-size">
+        All Size
+      </div>
+
+    </div>
+
+    <!-- TOTAL -->
+    <div class="cart-bottom">
+
+      <div>
+        <h4>Total</h4>
+        <h3>Rp 539.000</h3>
+      </div>
+
+      <button class="btn-checkout" onclick="checkoutProduk()">
+        Checkout
+      </button>
+    </div>
+  </div>
+</section>
+    <!-- DETAIL PEMBELIAN -->
+<div class="detail-box" id="detailBeli">
+
+  <h4>Detail Pembelian</h4>
+
+  <div class="detail-item">
+    <span>Nama</span>
+    <strong>Celtata</strong>
+  </div>
+
+  <div class="detail-item">
+    <span>Total Bayar</span>
+    <strong>Rp 539.000</strong>
+  </div>
+
+  <div class="detail-item">
+    <span>Metode Pembayaran</span>
+    <strong>Transfer Bank</strong>
+  </div>
+
+  <div class="detail-item">
+    <span>Status</span>
+    <strong class="status-success">
+      Pesanan Berhasil Dibuat
+    </strong>
+  </div>
+
+  <button class="btn-selesai" onclick="selesaiPesanan()">
+    Selesai
+  </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+ 

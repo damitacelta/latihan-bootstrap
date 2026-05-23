@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cardea</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+
+    <a class="navbar-brand">CARDEA</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="nav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="koleksi.html">Koleksi</a></li>
+        <li class="nav-item"><a class="nav-link" href="promo.html">Promo</a></li>
+        <li class="nav-item"><a class="nav-link" href="keranjang.html">Keranjang</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="hero"></section>
+
+<section class="promo py-5">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-5">
+      <h2 class="promo-title"> Promo Cardea </h2>
+
+      <p class="promo-subtitle">
+        Nikmati promo spesial cardigan favoritmu  </p>
+    </div>
+
+    <div class="d-flex justify-content-center gap-3 flex-wrap mb-5">
+      <button class="btn filter-btn active" onclick="showPromo('diskon')"> Promo Diskon </button>
+      <button class="btn filter-btn" onclick="showPromo('bonus')"> Promo Bonus </button>
+    </div>
+    <div id="diskonPromo">
+      <div class="row g-4">
+
+        <!-- CARD 1 -->
+        <div class="col-md-4">
+          <div class="promo-card">
+            <img src="oversizecardi4.jpg" class="promo-img">
+            <div class="promo-content">
+              <h4>Discount 20%</h4>
+              <p> Diskon spesial untuk pembelian minimal 2 cardigan. </p>
+               <button class="buy-btn">  Claim Promo  </button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-md-4">
+          <div class="promo-card">
+            <img src="cardigan cream pink.jpg" class="promo-img">
+            <div class="promo-content">
+              <h4>Discount 15%</h4>
+              <p> Belanja cardigan premium lebih hemat hari ini.
+              </p>
+              <button class="buy-btn"> Shop Now </button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-md-4">
+          <div class="promo-card">
+            <img src="gicc cardea.jpg" class="promo-img">
+            <div class="promo-content"> <h4>Special Sale</h4>
+              <p>  Promo terbatas untuk koleksi cardigan terbaru.</p>
+              <button class="buy-btn">Get Discount</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="bonusPromo" style="display:none;">
+      <div class="row g-4">
+        <!-- CARD 1 -->
+        <div class="col-md-4">
+          <div class="promo-card">
+            <img src="oversizecardi1.jpg" class="promo-img">
+            <div class="promo-content">
+              <h4>Free Tote Bag</h4>
+              <p> Beli cardigan tertentu gratis tote bag aesthetic. </p>
+              <button class="buy-btn">Get Bonus
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-md-4">
+          <div class="promo-card">
+            <img src="cardiganoversize2.jpg" class="promo-img">
+            <div class="promo-content">
+              <h4>Buy 2 Get 1</h4>
+              <p>  Beli 2 cardigan gratis 1 cardigan pilihan.  </p>
+              <button class="buy-btn">  Claim Now </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-md-4">
+          <div class="promo-card">
+            <img src="yyy.jpg" class="promo-img">
+            <div class="promo-content">
+              <h4>Free Accessories</h4>
+              <p> Dapatkan bonus accessories untuk pembelian tertentu.</p>
+              <button class="buy-btn"> Get Gift</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVASI -->
+<section class="reservasi py-5">
+  <div class="container-fluid">
+    <h3 class="text-center mb-4">Reservasi Cardigan</h3>
+    <p class="text-center text-muted mb-5">Amankan cardigan favoritmu sekarang!</p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card p-4 shadow-sm">
+
+          <div class="mb-3">
+            <label>Nama</label>
+            <input type="text" id="nama" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label>Produk</label>
+            <input type="text" id="produk" class="form-control">
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label>Jumlah</label>
+            <input type="number" id="jumlah" class="form-control">
+          </div>
+          <button class="btn btn-dark w-100" onclick="reservasi()">Reservasi</button>
+
+          <div id="hasil" class="mt-4 text-center fw-bold"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-light pt-5 pb-3">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Cardea</h5>
+        <p>
+        Cardea menghadirkan berbagai macam cardigan
+        Simple, soft, and elegant — temukan style favoritmu bersama Cardea
+        </p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Navigation</h5>
+        <ul class="list-unstyled footer">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="promo.html">Promo</a></li>
+          <li><a class="nav-link" href="koleksi.html">Koleksi</a></li>
+           <li><a class="nav-link" href="keranjang.html">Keranjang</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Contact</h5>
+        <p>Email : cardea@email.com</p>
+        <p>Telp : 0812-3456-7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>© 2026 Cardea - All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
